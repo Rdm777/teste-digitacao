@@ -23,8 +23,10 @@ const paragrafos = [
 
 const addTexto = document.querySelector("#adicionarTexto"),
 inpField = document.querySelector("#input-field"),
-addErros = document.querySelector(".erros span");
-contTempo = document.querySelector(".tempo span")
+addErros = document.querySelector(".erros span"),
+contTempo = document.querySelector(".tempo span"),
+contTpm = document.querySelector(".tpm span"),
+contPpm = document.querySelector(".ppm span");
 
 let tempo, tempoMax = 60
 tempoRest = tempoMax
@@ -73,13 +75,16 @@ function initTyping(){
   caracteres.forEach(span => span.classList.remove("ativado"));
   caracteres[campoInicial].classList.add("ativado");
 
+  let ppm = Math.round((((campoInicial - erros) / 5) / (tempoMax - tempoRest)) * 60);
   addErros.innerText = erros
+  contPpm.innerText = ppm;
+  contTpm.innerText = caractDigitado - erros;
 }
 
 function temporizador(){
   if (tempoRest > 0){
     tempoRest--;
-    contTempo.innerText = tempoRest
+    contTempo.innerText = tempoRest;
   }else{
     clearInterval(tempo);
     inpField.disabled = true;
