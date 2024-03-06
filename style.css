@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    padding: 2rem;
+    background-color: rgba(211, 211, 211, 0.692);
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.font-destaque{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.font-paragrafo{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.content-body{
+    align-items: center;
+}
+
+
+#text{
+    width: 70%;
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 30px -16px teal;
+    background-color: white;
+    color: gray;
+    overflow: hidden;
+}
+
+#text input {
+    width: 20px;
+    height: 0;
+    border: 0;
+    cursor: none;
+    opacity: 0;
+}
+
+#text > p span.correto{
+    color: black;
+}
+
+#text > p span.incorreto{
+    color: red; 
+}
+
+#text > p span.ativado{
+    border-left: 1px solid black;
+    border-left-width: 2px;
+}
+
+
+.metricas{
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.metricas li{
+    list-style-type: none;
+}
+
+.metricas > li abbr{
+    text-decoration: none;
+}
+
+
+
+.buttons button{
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 1rem;
+}
+
