@@ -20,7 +20,7 @@
 
   <h4>Ferramentas Usadas</h4>
   <ul>
-      <li>➡️ HTML <img src="" alt=""></li>
+      <li>➡️ HTML</li>
       <li>➡️ CSS</li>
       <li>➡️ JavaScript</li>
   </ul>
@@ -29,4 +29,4 @@
 
   <hr>
 
-  <h2>Acesse o site <a href="https://rdm777.github.io/teste-digitacao/" target="_blank">Clicando Aqui</a></h2>
+  <h2>Acesse o site <a href="https://rdm777.github.io/teste-digitacao/">Clicando Aqui</a></h2>
